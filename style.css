@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.back{
+    background: url(./images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* height: 40vh; */
+    background-color:turquoise;
+    /* width: 100%; */
+}
+
+.work-1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.work-1 button{
+    background-color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px 40px;
+    font-size: large;
+    transition: .5s;
+}
+.work-1 button:hover{
+    background-color: crimson;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+.work-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+}
+.work-2 img{
+    height: 70vh;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.text h1{
+    font-size: 40px;
+}
+.text p{
+    font-size:15px;
+}
+.text button{
+    width: 50%;
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+.user{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 0.5px solid white;
+    box-shadow:  0 0 5px rgb(238, 231, 231),
+    0 0 100px rgb(150, 145, 145);
+    border-radius: 15px;
+}
+.user-1{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 0.5px solid white;
+    box-shadow:  0 0 5px rgb(238, 231, 231),
+    0 0 100px rgb(150, 145, 145);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.user img{
+    height: 60vh;
+}
+.user-1 img{
+    height: 60vh;
+    overflow: hidden;
+}
+.users{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+}
+.down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: white; */
+    /* box-shadow: 0 0 100px rgb(155, 130, 130); */
+}
+.don{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    position: relative;
+    top: 60px;
+
+    gap: 30px;
+}
+.don button{
+    background-color: crimson;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.don h1{
+    font-size: 25px;
+}
+footer{
+    background-color:forestgreen;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 80px;
+}
+.bit{
+    display: flex;
+    color: white;
+    gap: 15px;
+}
+.first{
+    display: flex;
+    gap: 30px;
+}
+.one{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.lee{
+    display: flex;
+    gap: 15px;
+}
+li{
+    list-style: none;
+    color: white;
+    font-size: large;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px 0;
+}
+.image{
+    display: flex;
+    gap: 20px;
+    color: white;
+    padding: 40px 0;
+}
+.image img{
+    height: 3vh;
+}
+.copy p{
+    color: white;
+}
+.copy{
+    display: flex;
+    align-content: flex-start;
+    padding: 40px 0;
+}
+@media screen and (max-width:950px) {
+    .work-2{
+        width: 100%;
+        flex-direction: column;
+        padding: 70px 0;
+        gap: 40px;
+    }
+    .work-2 img{
+        width: 100%;
+    }
+    .user{
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        gap: 40px;
+    }
+    .user-1{
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 20px;
+        gap: 40px;
+        overflow: hidden;
+    }
+    .user-1 img{
+        overflow: hidden;
+    }
+    .users{
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .first{
+        flex-direction: column;
+    }
+    .lee{
+        flex-direction: column;
+    }
+    section{
+        overflow: hidden;
+    }
+    .down{
+        z-index: 999;
+    }
+    footer{
+        z-index: -999;
+    }
+    .don{
+        padding-bottom: 80px;
+    }
+}
